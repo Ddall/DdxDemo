@@ -1,0 +1,21 @@
+{% extends "::base.html.twig" %}
+{% block page_content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8 col-sm-8 col-xs-12">
+                <div class="box box-primary">
+                    <div class="box-header">
+                        <div class="box-title">
+                            <h3>Demonstration</h3>
+                        </div>
+                    </div>
+                    <div class="box-body">
+                        {% if city is not empty %}
+                            <div class="city">Name: {{ city }}</div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
